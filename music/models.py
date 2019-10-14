@@ -7,6 +7,7 @@ class track(models.Model):
     track_date = models.DateField()
     track_url = models.TextField()
     short_url = models.CharField(max_length = 50,default='Short url')
+    buy_url = models.TextField(default = "Buy Url")
     def __str__(self):
         return "Трек"
     class Meta:
